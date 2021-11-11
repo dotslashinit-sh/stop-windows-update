@@ -8,8 +8,8 @@ echo Stopping windows update...
 sc stop wuauserv
 sc stop UsoSvc
 
-REM Delivery optimization
-sc stop DoSvc
+REM Delivery optimization: Not necessary, but you can do it if you have Delivery Optimization enabled.
+REM sc stop DoSvc
 
 echo Stopped windows update. It might automatically start after a few minutes, and you can run this script again at that time to stop it.
 pause
